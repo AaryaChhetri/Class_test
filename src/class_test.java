@@ -28,22 +28,22 @@ public class class_test {
             switch (operation){
                 case 1:
                     System.out.println("Enter fist number:");
-                    int num_1 = sc.nextInt();
+                    int num1 = sc.nextInt();
 
                     System.out.println("Enter second number:");
-                    int num_2 = sc.nextInt();
+                    int num2 = sc.nextInt();
 
                     System.out.println("Enter third number:");
-                    int num_3 = sc.nextInt();
+                    int num3 = sc.nextInt();
 
-                    if(num_1>=num_2 & num_1>=num_3){
-                        System.out.println("first number is the greatest");
-                    } else if (num_2>=num_1 & num_2>=num_3) {
-                        System.out.println("second number is the greatest");
-                    } else if (num_3>=num_1 & num_3>=num_2) {
-                        System.out.println("third number is the greatest");
-                    } else{
-                        System.out.println("invalid");
+                    if (num1 > num2 && num1 > num3) {
+                        System.out.println("The first number is the greatest");
+                    } else if (num2 > num1 && num2 > num3) {
+                        System.out.println("The second number is the greatest");
+                    } else if (num3 > num1 && num3 > num2) {
+                        System.out.println("The third number is the greatest");
+                    } else {
+                        System.out.println("Invalid");
                     }
 
                     break;
@@ -94,7 +94,7 @@ public class class_test {
                     System.out.println("enter marks of Mandarin");
                     double Marks_of_Mandarin = sc.nextDouble();
 
-                    double Obtained_marks = (Marks_of_Mandarin+Marks_of_Newari+Marks_of_Sanskrit)/3 ;
+                    double Obtained_marks = (Marks_of_Mandarin+Marks_of_Newari+Marks_of_Sanskrit) ;
                     double Total_marks =  300;
 
                     double Obtained_Percentage = (Obtained_marks/Total_marks) * 100;
